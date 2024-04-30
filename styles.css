@@ -1,0 +1,43 @@
+* {
+    font-size: 16px; /* Set a default font size for all elements */
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    padding: 25px;
+}
+
+.box1, .box2 {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 50%;
+}
+
+.user {
+    flex: 1; /* Equal width for all user divs */
+    margin: 10px;
+    background: white;
+    border: 2px solid black;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 500px) {
+    .box2 {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+h2{
+    color: rgb(255, 11, 11);
+}
